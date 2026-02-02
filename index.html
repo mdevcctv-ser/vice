@@ -8,72 +8,135 @@
 <style>
 body{
     margin:0;
-    background:#3e3e3e;
+    background:#f4f4f4;
     font-family:Arial, sans-serif;
+    color:#222;
 }
 
-/* ===== FULL SCREEN HEADER ===== */
-.header-link{
-    display:block;
+/* HEADER */
+.header{
     width:99%;
     height:95vh;
-    margin:0 auto;
+    margin:10px auto;
     border:4px solid #fff;
-    background:url("header.jpg") no-repeat center center;
-    background-size:contain;   /* TEXT CUT FIX */
     position:relative;
+    background:#000;
+}
+.header img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
 }
 
-/* ===== BUTTON INSIDE IMAGE ===== */
-.header-btn{
+/* FULL HEADER CLICK */
+.header a.full-click{
     position:absolute;
-    bottom:8%;
-    left:50%;
-    transform:translateX(-50%);
+    inset:0;
+    z-index:5;
+}
+
+/* CONTENT SECTION */
+.content{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 15px;
+}
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+h3{
+    margin-top:30px;
+}
+p{
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn{
+    display:block;
+    width:max-content;
+    margin:30px auto;
     background:linear-gradient(#1fd655,#0fa63a);
     color:#fff;
-    padding:14px 34px;   /* width -1% approx */
+    padding:16px 38px;
     font-size:18px;
     font-weight:bold;
     border-radius:50px;
     text-decoration:none;
-    box-shadow:0 0 12px rgba(255,255,0,0.6);
-}
-
-/* ===== BUTTON BELOW IMAGE ===== */
-.whatsapp-bottom{
-    text-align:center;
-    margin:25px 0;
-}
-.whatsapp-bottom a{
-    display:inline-block;
-    background:linear-gradient(#1fd655,#0fa63a);
-    color:#fff;
-    padding:18px 40px;
-    font-size:20px;
-    font-weight:bold;
-    border-radius:50px;
-    text-decoration:none;
-    box-shadow:0 0 15px rgba(255,255,0,0.6);
+    box-shadow:0 0 14px rgba(0,0,0,0.3);
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER (FULL CLICKABLE) -->
-<a class="header-link"
+<!-- HEADER -->
+<div class="header">
+    <img src="header-image.jpg" alt="Mahadev Book">
+    <a class="full-click"
+       href="https://wa.me/233543211053?text=I%20need%20id%20sir"></a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>HOW IT WORKS</h2>
+
+<h3>Step 1: Share Your Requirement</h3>
+<p>
+Contact us via call or WhatsApp and tell us about your space — home, office, or commercial site.
+</p>
+
+<a class="whatsapp-btn"
    href="https://wa.me/233543211053?text=I%20need%20id%20sir">
-
-   <span class="header-btn">WHATSAPP NOW</span>
-
+   WHATSAPP NOW
 </a>
 
-<!-- SECOND WHATSAPP BUTTON -->
-<div class="whatsapp-bottom">
-    <a href="https://wa.me/233543211053?text=I%20need%20id%20sir">
-        WHATSAPP NOW
-    </a>
+<h3>Step 2: Get Expert Guidance</h3>
+<p>
+Our team recommends the best CCTV cameras and security solutions tailored to your needs.
+</p>
+
+<h3>Step 3: Installation & Support</h3>
+<p>
+Our professionals install the system and ensure everything works perfectly — with after-sales service and support.
+</p>
+
+<a class="whatsapp-btn"
+   href="https://wa.me/233543211053?text=I%20need%20id%20sir">
+   WHATSAPP NOW
+</a>
+
+<h2>WHY CHOOSE GOLDEN ENTERPRISES?</h2>
+
+<h3>Top-Quality Products</h3>
+<p>
+We deal in trusted CCTV brands offering HD clarity, night vision, and long-term reliability.
+</p>
+
+<h3>Professional Installation</h3>
+<p>
+Experienced technicians ensure seamless setup and coverage at every corner.
+</p>
+
+<h3>Affordable & Transparent Pricing</h3>
+<p>
+No hidden costs — just quality security within your budget.
+</p>
+
+<h3>Pan-India Service</h3>
+<p>
+From Delhi to Mumbai, Bangalore to Chennai — we deliver and install across India.
+</p>
+
+<h3>Service Coverage</h3>
+<p>
+We provide CCTV cameras, installation, and security solutions across India — including Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, and more.
+</p>
+
 </div>
 
 </body>

@@ -13,19 +13,20 @@ body{
     color:#222;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header{
     width:99%;
-    height:93vh; /* 👈 2% kam */
+    height:91vh;            /* ✅ image height aur chhoti */
     margin:10px auto;
     border:4px solid #fff;
     position:relative;
     background:#000;
 }
+
 .header img{
     width:100%;
     height:100%;
-    object-fit:contain;
+    object-fit:contain;     /* text cut nahi hoga */
     display:block;
 }
 
@@ -36,7 +37,7 @@ body{
     z-index:5;
 }
 
-/* CONTENT */
+/* ===== CONTENT ===== */
 .content{
     max-width:900px;
     margin:40px auto;
@@ -51,17 +52,18 @@ h2{
 
 /* SUB HEADINGS CENTER */
 h3{
-    text-align:center; /* 👈 center */
+    text-align:center;
     margin-top:30px;
 }
 
+/* PARAGRAPH */
 p{
     line-height:1.7;
     font-size:16px;
     text-align:center;
 }
 
-/* WHATSAPP BUTTON */
+/* ===== WHATSAPP BUTTON ===== */
 .whatsapp-btn{
     display:block;
     width:max-content;
@@ -80,14 +82,16 @@ p{
 
 <body>
 
-<!-- HEADER -->
+<!-- ===== HEADER IMAGE ===== -->
 <div class="header">
     <img src="header-image.jpg" alt="Mahadev Book">
+
+    <!-- Pure header pe click -->
     <a class="full-click"
        href="https://wa.me/233543211053?text=I%20need%20id%20sir"></a>
 </div>
 
-<!-- CONTENT -->
+<!-- ===== CONTENT ===== -->
 <div class="content">
 
 <h2>HOW IT WORKS</h2>

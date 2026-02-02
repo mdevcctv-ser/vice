@@ -8,99 +8,72 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
     background:#3e3e3e;
-    color:#fff;
+    font-family:Arial, sans-serif;
 }
 
-/* ===== FULL SCREEN HEADER IMAGE ===== */
-.header{
-    height:100vh;
-    background:url("header-image.jpg") no-repeat center center/cover;
+/* ===== FULL SCREEN HEADER ===== */
+.header-link{
+    display:block;
+    width:99%;
+    height:95vh;
+    margin:0 auto;
     border:4px solid #fff;
+    background:url("header.jpg") no-repeat center center;
+    background-size:contain;   /* TEXT CUT FIX */
     position:relative;
 }
 
-/* ===== WHATSAPP BUTTON ===== */
-.whatsapp-btn{
-    text-align:center;
-    margin:30px 0;
+/* ===== BUTTON INSIDE IMAGE ===== */
+.header-btn{
+    position:absolute;
+    bottom:8%;
+    left:50%;
+    transform:translateX(-50%);
+    background:linear-gradient(#1fd655,#0fa63a);
+    color:#fff;
+    padding:14px 34px;   /* width -1% approx */
+    font-size:18px;
+    font-weight:bold;
+    border-radius:50px;
+    text-decoration:none;
+    box-shadow:0 0 12px rgba(255,255,0,0.6);
 }
-.whatsapp-btn a{
+
+/* ===== BUTTON BELOW IMAGE ===== */
+.whatsapp-bottom{
+    text-align:center;
+    margin:25px 0;
+}
+.whatsapp-bottom a{
     display:inline-block;
     background:linear-gradient(#1fd655,#0fa63a);
     color:#fff;
-    text-decoration:none;
     padding:18px 40px;
-    border-radius:50px;
     font-size:20px;
     font-weight:bold;
+    border-radius:50px;
+    text-decoration:none;
     box-shadow:0 0 15px rgba(255,255,0,0.6);
-}
-
-/* ===== SECTION COMMON ===== */
-.section{
-    padding:30px 20px;
-    text-align:center;
-}
-.section h2{
-    color:#ffd700;
-    margin-bottom:20px;
-}
-
-/* ===== TEXT ===== */
-.section p{
-    line-height:1.6;
-    color:#ddd;
-}
-
-/* ===== BOX TEXT ===== */
-.box-title{
-    font-weight:bold;
-    margin-top:15px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER IMAGE -->
-<div class="header"></div>
+<!-- HEADER (FULL CLICKABLE) -->
+<a class="header-link"
+   href="https://wa.me/233543211053?text=I%20need%20id%20sir">
 
-<!-- WHATSAPP BUTTON -->
-<div class="whatsapp-btn">
-    <a href="https://wa.me/91XXXXXXXXXX">WHATSAPP NOW</a>
-</div>
+   <span class="header-btn">WHATSAPP NOW</span>
 
-<!-- HOW IT WORKS -->
-<div class="section">
-    <h2>How It Works</h2>
+</a>
 
-    <p><span class="box-title">Step 1: Share Your Requirement</span><br>
-    Contact us via call or WhatsApp and tell us about your space — home, office, or commercial site.</p>
-
-    <p><span class="box-title">Step 2: Get Expert Guidance</span><br>
-    Our team recommends the best solutions tailored to your needs.</p>
-
-    <p><span class="box-title">Step 3: Installation & Support</span><br>
-    Our professionals ensure everything works perfectly with after-sales support.</p>
-</div>
-
-<!-- WHY CHOOSE -->
-<div class="section">
-    <h2>Why Choose Golden Enterprises?</h2>
-
-    <p><b>Top-Quality Products</b><br>
-    Trusted brands with HD clarity and long-term reliability.</p>
-
-    <p><b>Professional Installation</b><br>
-    Experienced technicians ensure seamless setup.</p>
-
-    <p><b>Affordable & Transparent Pricing</b><br>
-    No hidden costs — quality within budget.</p>
-
-    <p><b>Pan-India Service</b><br>
-    Delhi, Mumbai, Bangalore, Chennai & more.</p>
+<!-- SECOND WHATSAPP BUTTON -->
+<div class="whatsapp-bottom">
+    <a href="https://wa.me/233543211053?text=I%20need%20id%20sir">
+        WHATSAPP NOW
+    </a>
 </div>
 
 </body>
